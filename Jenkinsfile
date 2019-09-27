@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Pre-Build') {
       steps {
-        sh '''#/bin/bash
-
-date +"%Y-%M-%D %H:%m:%s"'''
+        sh 'date +"%Y-%M-%D %H:%m:%s"'
       }
     }
   }
