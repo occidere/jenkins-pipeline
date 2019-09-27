@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Pre-Build') {
       steps {
-        sh 'date +"%Y-%M-%D %H:%m:%s"'
+        sh '''timestamp=`date +"%Y-%m-%d %H:%M:%S"`
+
+echo "${timestamp}"'''
       }
     }
   }
