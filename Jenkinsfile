@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'test'
+      label 'master'
     }
 
   }
@@ -9,7 +9,6 @@ pipeline {
     stage('Pre-Build') {
       steps {
         sh '''timestamp=`date +"%Y-%m-%d %H:%M:%S"`
-
 echo "${timestamp}"'''
       }
     }
